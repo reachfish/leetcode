@@ -1,3 +1,6 @@
+##1 two sum 求数组中两数和为target
+一次遍历，使用哈希表记录数字，判断target - num是否在哈希表中
+
 ##6 zigzag conversion 按zigzag组织字符串，再输出 
 使用多层vector保存每行的字母
 

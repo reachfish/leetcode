@@ -75,6 +75,7 @@ public:
             v[pos] = back;
         }
 
+        m.erase(val);
         v.pop_back();
 
         return true;

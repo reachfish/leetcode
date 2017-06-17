@@ -1,0 +1,48 @@
+##6 zigzag conversion 按zigzag组织字符串，再输出 
+使用多层vector保存每行的字母
+
+##120 triangle 杨辉三角路径的最小和
+O(n)的时间复杂度，自上向下计算
+v[i] = min(v[i-1], v[i]) + triangle[i]
+
+##139 word break 字符串切分成词
+1. 使用动态规划，复杂度为O(n^2) 
+   dp[i] |= dp[j] && (s[j..i] in dict) (j=0,...,i)
+2. 使用递归，指数复杂度
+   helper(s, dict) => (sub in dict) && helper(left, dict)
+说明：很多指数复杂度的递归考虑能否改成动态规划，动态规划实际上是添加备忘本，避免指数过程中的重复计算
+
+##208 implement trie prefix tree 构建词的前缀树
+map[c] => postfix
+
+##209 minimum size subarray sum  连续数列其和不低于s的最小区间长
+使用queue，保证queue中和不低于s，大于s时则左边元素出队列，以求得最小值
+
+##274 h-index H指数 
+排序 + 自右往左判断
+
+##299 bulls and cows 计算两字符串匹配字符个数、匹配位置个数
+匹配位置个数 + 匹配字符个数 = 相同字符出现的个数
+
+##380 insert delete getrandom O(1) 插入删除随机O(1) 
+删除一个元素时，vector back => 删除位置，再pop_back，从而保证删除元素时复杂度也是O(1)
+说明：vector删除一个元素时，可以把back挪到删除位置，再popback，则复杂度为O(1)
+
+##386 lexicographial numbers 按字典顺序输出1-n的数字
+使用递归   
+helper(val) => visit(val) 
+               for i = 0, 9 do helper(10*val + i)
+
+##399 evaluate division 计算变量商值 
+找出有关联的变量，即找图的联通分量，每个联通子图中一律用其中一个变量来表示: 
+b = ?? * a, c = ?? * a, ...
+
+##467 unique substrings in wraparround string 在无穷字母表连环中，找出给定字符串的unique子串的出现次数
+记录以字符x开头的连续子串的最大长度，则其长度==以x开头的子串的个数
+
+##525 contiguous array 找出出现等次数0和1的连续序列的最大长度
+其中一个数字标记为1，另一数字标记为-1，等次数的连续序列 => sum = 0
+s1 == s2 => p1,p2间的和为0 => 等次数
+
+##592 fraction addition and subtraction 分数加减
+a/b + c/d = (ad + bc)/(bd) => 再约分

@@ -53,3 +53,6 @@ s1 == s2 => p1,p2间的和为0 => 等次数
 
 ##592 fraction addition and subtraction 分数加减
 a/b + c/d = (ad + bc)/(bd) => 再约分
+
+##621 task Scheduler 任务调度最小花费时间
+按任务次数从大到小排序，每次从可选任务中选择剩余次数最大的，如果都不可选，则选择冷却时间最小的

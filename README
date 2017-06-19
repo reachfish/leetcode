@@ -27,6 +27,9 @@ O(n)时间复杂度，O(1)空间复杂度
 O(n)的时间复杂度，自上向下计算
 v[i] = min(v[i-1], v[i]) + triangle[i]
 
+##138 copy list with random pointer 拷贝包含有随机指针的链表 
+先拷贝一个链表p1->q1->p2->q2->p3->q3-> ...，接着拷贝随机指针 q->random = p->random->next，最后把p, q指针分离
+
 ##139 word break 字符串切分成词
 1. 使用动态规划，复杂度为O(n^2) 
    dp[i] |= dp[j] && (s[j..i] in dict) (j=0,...,i)

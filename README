@@ -53,6 +53,9 @@ map[c] => postfix
 ##299 bulls and cows 计算两字符串匹配字符个数、匹配位置个数
 匹配位置个数 + 匹配字符个数 = 相同字符出现的个数
 
+##368 largest divisible subset 数组中能连续整除的最大个数
+先排序，在使用动态规划由右往左计算 dp[i] = (max(dp[j]) or 0) + 1，其中 nums[j]>=nums[i]
+
 ##377 combination sum iv 多个面值不一样的硬币组合成目标的序列个数，不同排序算不同的序列
 1.考虑顺序列时(考虑i的最后一个元素为num)，对位置作外侧循环，内层为硬币种类，复杂度为O(n^2): dp[i] += dp[i - num]
 2.不考虑顺序列时，对硬币种类作循环，复杂度为O(n): dp[i] += dp[i-num]

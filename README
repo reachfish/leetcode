@@ -56,6 +56,9 @@ map[c] => postfix
 ##299 bulls and cows 计算两字符串匹配字符个数、匹配位置个数
 匹配位置个数 + 匹配字符个数 = 相同字符出现的个数
 
+##334 increasing triplet subsequence 数组中是否存在三数a[i]<a[j]<a[k] && i < j < k
+记录两数c1, c2, 当前数<=c1时则更新c1, 否则<=c2时则更新c2,否则返回true
+
 ##368 largest divisible subset 数组中能连续整除的最大个数
 先排序，在使用动态规划由右往左计算 dp[i] = (max(dp[j]) or 0) + 1，其中 nums[j]>=nums[i]
 

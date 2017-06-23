@@ -50,6 +50,9 @@ map[c] => postfix
 ##274 h-index H指数 
 排序 + 自右往左判断
 
+##284 peeking iterator 增加支持peek(指下一个next)的函数
+增加 cur 和 curValid 两个变量，分别指明下一个next的变量，以及cur是否有效。
+
 ##299 bulls and cows 计算两字符串匹配字符个数、匹配位置个数
 匹配位置个数 + 匹配字符个数 = 相同字符出现的个数
 

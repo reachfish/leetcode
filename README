@@ -114,3 +114,6 @@ map<content, vector<path>> m 按内容索引文件名数组
 
 ##628 maximum product of three numbers 数组中求三数的最大值。
 对数组排序，取 a[0] * a[1] * a[len-1] 和 a[len-1] * a[len-2] * a[len-3] 中较大者。
+
+##629 k inverse pairs array 寻找1...n构成的数组中包含k个逆序对的个数
+对最后一位数进行枚举，使用动态规划，dp[n][k] = dp[n-1][k-(n-1)] + dp[n-1][k-(n-2)] + ... + dp[n-1][k]

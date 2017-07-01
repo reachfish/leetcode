@@ -82,6 +82,9 @@ helper(val) => visit(val)
 找出有关联的变量，即找图的联通分量，每个联通子图中一律用其中一个变量来表示: 
 b = ?? * a, c = ?? * a, ...
 
+##424 longest repeating character replacement 求字符串中最多替换k个字符的连续repeat字符串长度
+使用滑动窗口，记录当前字符出现的个数。 end - start + 1 - maxCount > k 时，表明start需要往右移动。
+
 ##438 find all anagrams in a string 对于两字符s, p, 查找s中所有包含跟p同构的字符串
 滑动窗口,使用m记录字符出现的次数，并用count表示不为0的字符的个数
 m[i] == 0 => count++;

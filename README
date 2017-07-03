@@ -135,3 +135,6 @@ map<content, vector<path>> m 按内容索引文件名数组
 
 ##629 k inverse pairs array 寻找1...n构成的数组中包含k个逆序对的个数
 对最后一位数进行枚举，使用动态规划，dp[n][k] = dp[n-1][k-(n-1)] + dp[n-1][k-(n-2)] + ... + dp[n-1][k]
+
+##633 sum of square numbers 判断某数是否为两个数的平方和
+从 sqrt(val/2) 开始递减，判断val - a*a是否为平方数

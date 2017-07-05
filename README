@@ -59,6 +59,13 @@ map[c] => postfix
 ##299 bulls and cows 计算两字符串匹配字符个数、匹配位置个数
 匹配位置个数 + 匹配字符个数 = 相同字符出现的个数
 
+##309 best time to buy and sell stock with cooldown 冷却1天的购买股票的最大收益
+使用状态机，来进行转移：
+s0(rest) :   rest => s0,   buy => s1 
+s1(buy)  :   rest => s1,   sell => s2 
+s2(sell) :   rest => s0,
+使用装个状态机， max(s0[i], s1[i], s2[i])即为所求
+
 ##334 increasing triplet subsequence 数组中是否存在三数a[i]<a[j]<a[k] && i < j < k
 记录两数c1, c2, 当前数<=c1时则更新c1, 否则<=c2时则更新c2,否则返回true
 

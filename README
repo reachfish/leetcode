@@ -7,6 +7,9 @@
 
 回文字符串中， start - end 两个位置包含了n, k
 
+3. 两边向中间夹逼，例如求两数和等于某数，
+题目：11
+
 # 题目
 ##1 two sum 求数组中两数和为target
 一次遍历，使用哈希表记录数字，判断target - num是否在哈希表中
@@ -32,6 +35,9 @@ cur = min { cur + 1, i - last_ccur }
 
 ##18 4sum 求数组中四数和为0的所有unique情况
 类似3sum，从排序，从左边找两数，然后再找两数和为0，时间复杂度为O(n^3)
+
+##22 generate parentheses n个(和n个)的正确匹配枚举
+递归可得， helper(res, s, left, right)
 
 ##31 next permutation 求数组按大小排列的下一个较大数
 O(n)时间复杂度，O(1)空间复杂度

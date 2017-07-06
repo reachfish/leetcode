@@ -1,9 +1,22 @@
+# 总结：
+1. 考察是否具有递推性， f(n) = f(n-1)??  常见解法：cur - global 方法 
+题目：3
+
+2. 出现n, k等等字眼， f[n][k] = ...??  常见解法： 动态规划
+题目：5
+
+回文字符串中， start - end 两个位置包含了n, k
+
+# 题目
 ##1 two sum 求数组中两数和为target
 一次遍历，使用哈希表记录数字，判断target - num是否在哈希表中
 
 ##3 longest substring without repeating characters 字符串中不重复的子串的最大长度
 使用 cur - max 方法：
 cur = min { cur + 1, i - last_ccur }
+
+##5 longest palindromic substring 最长回文子串
+使用动态规划， dp[i][j] 表示i-j是否为回文串
 
 ##6 zigzag conversion 按zigzag组织字符串，再输出 
 使用多层vector保存每行的字母

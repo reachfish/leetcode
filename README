@@ -21,6 +21,8 @@
 
 5. 求最大连通分量
 
+6. dfs
+
 # 题目
 ##1 two sum 求数组中两数和为target
 一次遍历，使用哈希表记录数字，判断target - num是否在哈希表中
@@ -76,6 +78,9 @@ map[c] => postfix
 
 ##209 minimum size subarray sum  连续数列其和不低于s的最小区间长
 使用queue，保证queue中和不低于s，大于s时则左边元素出队列，以求得最小值
+
+##212 word search ii  寻找字符矩阵中能转成的多个单词， 单词由字典给出
+trie + dfs 搜索可得
 
 ##213 house robber ii  环形房子抢钱，要求相邻两家不能同时被抢，求最大抢钱数
 分奇偶计算 a = max(b, a+nums[i])   b = max(a, b+nums[i])算出来直线型的最大；
@@ -169,7 +174,7 @@ map<content, vector<path>> m 按内容索引文件名数组
 ##621 task Scheduler 任务调度最小花费时间
 按任务次数从大到小排序，每次从可选任务中选择剩余次数最大的，如果都不可选，则选择冷却时间最小的
 
-#623 add one row to tree 树中添加一层子节点
+##623 add one row to tree 树中添加一层子节点
 
 ##624 maximum distance in arrays 多个已排序数列的最大间隔差
 一次遍历，记下当前数组和之前最大最小值的最大间隔，接着更新当前的最大最小值

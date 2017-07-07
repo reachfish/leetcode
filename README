@@ -3,6 +3,8 @@
 题目：3
 对于树也一样，考察当前节点为终点的序列，
 题目：124
+矩阵中的路径也一样
+题目：329： (套路：dfs + cache)
 
 2. 出现n, k等等字眼， f[n][k] = ...??  常见解法： 动态规划
 题目：5
@@ -97,6 +99,9 @@ s0(rest) :   rest => s0,   buy => s1
 s1(buy)  :   rest => s1,   sell => s2 
 s2(sell) :   rest => s0,
 使用装个状态机， max(s0[i], s1[i], s2[i])即为所求
+
+##329 longest increasing path in a matrix 求矩阵中增量的最长路径
+dfs + cache 来解决
 
 ##334 increasing triplet subsequence 数组中是否存在三数a[i]<a[j]<a[k] && i < j < k
 记录两数c1, c2, 当前数<=c1时则更新c1, 否则<=c2时则更新c2,否则返回true

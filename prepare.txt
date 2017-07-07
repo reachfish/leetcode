@@ -1,0 +1,321 @@
+1
+Two Sum			33.7%33Easy
+2
+Add Two Numbers			27.5%27Medium
+33Easy
+Longest Substring Without Repeating Characters			24.2%24Medium
+4
+Median of Two Sorted Arrays			21.5%21Hard
+5
+Longest Palindromic Substring			25.1%25Medium
+7
+Reverse Integer			24.3%24Easy
+8
+String to Integer (atoi)		14.0%14Medium
+10
+Regular Expression Matching			24.0%24Hard
+11
+Container With Most Water			36.4%36Medium
+13
+Roman to Integer		45.3%45Easy
+14Medium
+Longest Common Prefix			31.4%31Easy
+15
+3Sum		21.6%21Medium
+17
+Letter Combinations of a Phone Number			34.1%34Medium
+19
+Remove Nth Node From End of List		33.2%33Medium
+20
+Valid Parentheses			33.2%33Easy
+21Medium
+Merge Two Sorted Lists			38.9%38Easy
+22
+Generate Parentheses		44.3%44Medium
+23
+Merge k Sorted Lists		27.0%27Hard
+26
+Remove Duplicates from Sorted Array			35.5%35Easy
+28
+Implement strStr()			27.9%27Easy
+29
+Divide Two Integers			16.0%16Medium
+33Easy
+Search in Rotated Sorted Array			32.1%32Medium
+34Medium
+Search for a Range			31.3%31Medium
+36Medium
+Valid Sudoku		35.4%35Medium
+38Easy
+Count and Say			34.2%34Easy
+41
+First Missing Positive			25.4%25Hard
+42
+Trapping Rain Water			36.5%36Hard
+44Medium
+Wildcard Matching			19.8%19Hard
+46
+Permutations		43.0%43Medium
+48
+Rotate Image		38.3%38Medium
+49
+Group Anagrams			34.0%34Medium
+50
+Pow(x, n)			26.5%26Medium
+53
+Maximum Subarray		39.4%39Easy
+54
+Spiral Matrix			25.7%25Medium
+55
+Jump Game			29.5%29Medium
+56
+Merge Intervals			29.7%29Medium
+62
+Unique Paths		40.7%40Medium
+66
+Plus One		38.3%38Easy
+69
+Sqrt(x)			27.7%27Easy
+70
+Climbing Stairs			39.7%39Easy
+73
+Set Matrix Zeroes			35.8%35Medium
+75
+Sort Colors			37.7%37Medium
+76
+Minimum Window Substring		24.9%24Hard
+78
+Subsets			39.7%39Medium
+79
+Word Search			26.4%26Medium
+84
+Largest Rectangle in Histogram			26.4%26Hard
+88
+Merge Sorted Array			31.9%31Easy
+91
+Decode Ways			19.4%19Medium
+94
+Binary Tree Inorder Traversal			46.1%46Medium
+98
+Validate Binary Search Tree			23.1%23Medium
+101
+Symmetric Tree			38.4%38Easy
+102
+Binary Tree Level Order Traversal			39.1%39Medium
+103
+Binary Tree Zigzag Level Order Traversal		34.1%34Medium
+104
+Maximum Depth of Binary Tree		52.3%52Easy
+105
+Construct Binary Tree from Preorder and Inorder Traversal			31.9%31Medium
+108
+Convert Sorted Array to Binary Search Tree			41.8%41Easy
+116
+Populating Next Right Pointers in Each Node			36.9%36Medium
+118
+Pascal's Triangle			38.2%38Easy
+121
+Best Time to Buy and Sell Stock			40.8%40Easy
+122
+Best Time to Buy and Sell Stock II			46.7%46Easy
+124
+Binary Tree Maximum Path Sum		25.8%25Hard
+125
+Valid Palindrome		26.1%26Easy
+127
+Word Ladder			19.3%19Medium
+128
+Longest Consecutive Sequence		36.5%36Hard
+130
+Surrounded Regions			18.2%18Medium
+131
+Palindrome Partitioning			32.7%32Medium
+134
+Gas Station			29.2%29Medium
+136
+Single Number			54.1%54Easy
+138
+Copy List with Random Pointer			26.4%26Medium
+139
+Word Break			29.5%29Medium
+140
+Word Break II			23.0%23Hard
+141
+Linked List Cycle			35.4%35Easy
+146
+LRU Cache			17.4%17Hard
+148
+Sort List			28.4%28Medium
+149
+Max Points on a Line		15.3%15Hard
+150
+Evaluate Reverse Polish Notation		26.9%26Medium
+152
+Maximum Product Subarray		25.4%25Medium
+155
+Min Stack			28.2%28Easy
+160
+Intersection of Two Linked Lists		30.5%30Easy
+162
+Find Peak Element			37.1%37Medium
+163
+Missing Ranges			24.9%24Medium
+166
+Fraction to Recurring Decimal			17.4%17Medium
+169
+Majority Element		46.3%46Easy
+171
+Excel Sheet Column Number			46.7%46Easy
+172
+Factorial Trailing Zeroes			35.7%35Easy
+179
+Largest Number			22.4%22Medium
+189
+Rotate Array		24.4%24Easy
+190
+Reverse Bits		29.5%29Easy
+191
+Number of 1 Bits		39.4%39Easy
+198
+House Robber		38.6%38Easy
+200
+Number of Islands			34.1%34Medium
+202
+Happy Number		40.4%40Easy
+204
+Count Primes		26.5%26Easy
+206
+Reverse Linked List			45.1%45Easy
+207
+Course Schedule			31.7%31Medium
+208
+Implement Trie (Prefix Tree)		27.6%27Medium
+210
+Course Schedule II			27.4%27Medium
+212
+Word Search II			23.1%23Hard
+215
+Kth Largest Element in an Array			38.9%38Medium
+217
+Contains Duplicate			45.4%45Easy
+218
+The Skyline Problem			26.8%26Hard
+227
+Basic Calculator II			29.0%29Medium
+230
+Kth Smallest Element in a BST			43.5%43Medium
+234
+Palindrome Linked List			32.5%32Easy
+236
+Lowest Common Ancestor of a Binary Tree			29.7%29Medium
+237
+Delete Node in a Linked List		46.3%46Easy
+238
+Product of Array Except Self		48.7%48Medium
+239
+Sliding Window Maximum			32.7%32Hard
+240
+Search a 2D Matrix II			38.3%38Medium
+242
+Valid Anagram			46.1%46Easy
+251
+Flatten 2D Vector			40.2%40Medium
+253
+Meeting Rooms II		38.8%38Medium
+268
+Missing Number			44.1%44Easy
+269
+Alien Dictionary		23.4%23Hard
+277
+Find the Celebrity			35.3%35Medium
+279
+Perfect Squares			36.4%36Medium
+283
+Move Zeroes			49.5%49Easy
+285
+Inorder Successor in BST		36.0%36Medium
+287
+Find the Duplicate Number			43.0%43Medium
+289
+Game of Life		36.7%36Medium
+295
+Find Median from Data Stream		26.0%26Hard
+297
+Serialize and Deserialize Binary Tree			32.9%32Hard
+300
+Longest Increasing Subsequence			38.2%38Medium
+308
+Range Sum Query 2D - Mutable		22.1%22Hard
+315
+Count of Smaller Numbers After Self			34.3%34Hard
+322
+Coin Change			26.4%26Medium
+324
+Wiggle Sort II			25.8%25Medium
+326
+Power of Three			40.0%40Easy
+328
+Odd Even Linked List		43.3%43Medium
+329
+Longest Increasing Path in a Matrix			36.1%36Hard
+334
+Increasing Triplet Subsequence			39.0%39Medium
+340
+Longest Substring with At Most K Distinct Characters		38.5%38Hard
+341
+Flatten Nested List Iterator		41.0%41Medium
+344
+Reverse String			58.9%58Easy
+347
+Top K Frequent Elements			47.7%47Medium
+348
+Design Tic-Tac-Toe			45.9%45Medium
+350
+Intersection of Two Arrays II			44.5%44Easy
+371
+Sum of Two Integers			51.2%51Easy
+378
+Kth Smallest Element in a Sorted Matrix			44.3%44Medium
+380
+Insert Delete GetRandom O(1)		39.0%39Medium
+384
+Shuffle an Array		46.2%46Medium
+387
+First Unique Character in a String			46.4%46Easy
+395
+Longest Substring with At Least K Repeating Characters			35.5%35Medium
+412
+Fizz Buzz			58.8%58Easy
+454
+
+##
+*76
+*84
+91
+94
+102
+116
+*127
+*128
+*134
+*140
+*149
+*150
+*163
+*166
+171
+207
+210 选课 queue visit
+*212
+215 第K大，使用类快排
+*218
+*251
+*253
+*269
+*277
+*285
+*287
+*289
+*297
+*315
+*324

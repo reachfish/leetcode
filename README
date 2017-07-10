@@ -72,6 +72,9 @@ if(count==0){
 	//check is minimum window
 }
 
+##84 largest rectangle in histogram  竖方图中的最大矩形面积
+尾部加0， 使用栈保存元素， 是的栈中元素保持增量的排序， 则当前元素较小时， 退栈并且计算当前矩形的面积。
+
 ##120 triangle 杨辉三角路径的最小和
 O(n)的时间复杂度，自上向下计算
 v[i] = min(v[i-1], v[i]) + triangle[i]

@@ -23,6 +23,10 @@
 
 6. dfs
 
+7. 滑动窗口 
+设置一左边界，当前窗口不满足时，左边界不断往右移动
+题目：134
+
 # 题目
 ##1 two sum 求数组中两数和为target
 一次遍历，使用哈希表记录数字，判断target - num是否在哈希表中
@@ -86,6 +90,13 @@ right = m[num+1]
 m[num] = m[num-left] = m[num+right] = left + right + 1
 
 这样记录之后，对于一个边界 [a, b]， 一定会有 m[a]=m[b]=a,b之间的个数
+
+##134 gas station 环状加油站，能否环跑一圈，能的话从第几个加油站开始
+使用滑动窗口
+total += gas[i] - cost[i]
+cur += gas[i] - cost[i] 
+当cur < 0时，窗口左边界不断右移动
+最后判断total是否 >= 0，是的话则返回左边界
 
 ##138 copy list with random pointer 拷贝包含有随机指针的链表 
 先拷贝一个链表p1->q1->p2->q2->p3->q3-> ...，接着拷贝随机指针 q->random = p->random->next，最后把p, q指针分离

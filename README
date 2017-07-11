@@ -108,6 +108,9 @@ cur += gas[i] - cost[i]
    helper(s, dict) => (sub in dict) && helper(left, dict)
 说明：很多指数复杂度的递归考虑能否改成动态规划，动态规划实际上是添加备忘本，避免指数过程中的重复计算
 
+##150 evaluate reverse polish notation 逆波兰式
+使用栈
+
 ##208 implement trie prefix tree 构建词的前缀树
 map[c] => postfix
 

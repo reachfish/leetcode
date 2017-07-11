@@ -168,6 +168,10 @@ helper(val) => visit(val)
 ##394 decode string   包含xx[yyy]型的字符串解码，xx表示重复次数
 按照本身的定义可以使用递归，找出一对匹配的[]，然后进行分解： AB(f(A)+f(B)) 或 nA (n * f(A)) 的形式，递归可得。
 
+##395 longest substring with at least k repeating characters 字符串中每个字符最少重复k次的最大长度
+使用递归求解
+f(s, k) => f(sx, k) sx 为s中不足k次字符切分的子串 
+
 ##399 evaluate division 计算变量商值 
 找出有关联的变量，即找图的联通分量，每个联通子图中一律用其中一个变量来表示: 
 b = ?? * a, c = ?? * a, ...

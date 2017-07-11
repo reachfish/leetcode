@@ -79,6 +79,14 @@ if(count==0){
 O(n)的时间复杂度，自上向下计算
 v[i] = min(v[i-1], v[i]) + triangle[i]
 
+##128 longest consecutive sequence  求数组中最长连续子数列的长度
+使用边界记录  
+left = m[num-1]
+right = m[num+1]
+m[num] = m[num-left] = m[num+right] = left + right + 1
+
+这样记录之后，对于一个边界 [a, b]， 一定会有 m[a]=m[b]=a,b之间的个数
+
 ##138 copy list with random pointer 拷贝包含有随机指针的链表 
 先拷贝一个链表p1->q1->p2->q2->p3->q3-> ...，接着拷贝随机指针 q->random = p->random->next，最后把p, q指针分离
 

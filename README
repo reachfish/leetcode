@@ -56,6 +56,9 @@ cur = min { cur + 1, i - last_ccur }
 ##22 generate parentheses n个(和n个)的正确匹配枚举
 递归可得， helper(res, s, left, right)
 
+##30 substring with concatenation of all words 给定一个词典，且词典中的词等长，找出一个字符串中所有子串，使得其恰好包含词典中所有的词。
+从字符串任一位置开始，判断其是否恰好包含这个词典中的所有词。
+
 ##31 next permutation 求数组按大小排列的下一个较大数
 O(n)时间复杂度，O(1)空间复杂度
 从尾部往左，找出第一个满足a[i]<a[i+1]的数a[i]，然后从尾部找出第一个大于a[i]的数a[j]，i, j位置交换，接着a[i+1, ... n-1]之间的数值颠倒过来

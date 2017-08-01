@@ -258,3 +258,6 @@ map<content, vector<path>> m 按内容索引文件名数组
 ###646 maximum length or pair chain 不相交区间的最大个数
 使用贪心算法，对区间右侧进行排序，然后从左往右，依次选择可兼容的 
 
+###647 palindromic substrings 求回文子串个数
+使用动态规划算法
+dp[i][j] = dp[i+1][j-1] && s[i]==s[j]

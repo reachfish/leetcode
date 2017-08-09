@@ -261,3 +261,7 @@ map<content, vector<path>> m 按内容索引文件名数组
 ###647 palindromic substrings 求回文子串个数
 使用动态规划算法
 dp[i][j] = dp[i+1][j-1] && s[i]==s[j]
+
+###652 find duplicate substrings 寻找二叉树中重复的子树，对于这些子树，只需要找出它们当中的一个根节点即可。
+
+查找所有节点的后缀遍历串，并且增加一个map，保存每个这样串的出现次数，当出现次数==2时表示是重复了。

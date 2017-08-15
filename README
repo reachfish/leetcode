@@ -67,6 +67,10 @@ cur = min { cur + 1, i - last_ccur }
 ##16 3sum closest 找出数组中三数和和给定目标最接近
 先排序，然后从头往后找，每次找的目标为-a[i]，找到则直接返回target，否则继续找
 
+##17 letter combinations of a phone number  电话号码组成的字符串
+
+迭代号码 d => word + [dict of (d)]
+
 ##18 4sum 求数组中四数和为0的所有unique情况
 类似3sum，从排序，从左边找两数，然后再找两数和为0，时间复杂度为O(n^3)
 

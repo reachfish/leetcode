@@ -97,6 +97,10 @@ struct cmp{
 }
 ```
 
+##24 swap nodes in pairs 交换链表中奇偶位置的两个结点
+
+遍历交换每两个结点
+
 ##30 substring with concatenation of all words 给定一个词典，且词典中的词等长，找出一个字符串中所有子串，使得其恰好包含词典中所有的词。
 从字符串任一位置开始，判断其是否恰好包含这个词典中的所有词。
 

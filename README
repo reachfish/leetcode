@@ -49,6 +49,11 @@ cur = min { cur + 1, i - last_ccur }
 ##6 zigzag conversion 按zigzag组织字符串，再输出 
 使用多层vector保存每行的字母
 
+##7 reverse integer 将整数倒置
+将整数倒置，当书记溢出时返回0
+
+使用long来保存数据，当 y != int(y) 时表示溢出了。
+
 ##11 container with most water 板块序列中，找出两块板之间能盛的最多水量  
 从两边往里靠，每次移动较小一方的板。类似贪心算法。 
 

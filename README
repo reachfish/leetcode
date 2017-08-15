@@ -36,6 +36,9 @@
 ##1 two sum 求数组中两数和为target
 一次遍历，使用哈希表记录数字，判断target - num是否在哈希表中
 
+##2 add two numbers 两数和
+两数和，数字用链表来表示。
+
 ##3 longest substring without repeating characters 字符串中不重复的子串的最大长度
 使用 cur - max 方法：
 cur = min { cur + 1, i - last_ccur }

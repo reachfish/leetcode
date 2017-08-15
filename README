@@ -74,6 +74,10 @@ cur = min { cur + 1, i - last_ccur }
 ##18 4sum 求数组中四数和为0的所有unique情况
 类似3sum，从排序，从左边找两数，然后再找两数和为0，时间复杂度为O(n^3)
 
+##20 valid parentheses  判断括号序列是否正确
+
+遍历，使用栈
+
 ##22 generate parentheses n个(和n个)的正确匹配枚举
 递归可得， helper(res, s, left, right)
 f(n) = sum { f(i) * f(n-i) },  i = 1, 2, ..., n-1

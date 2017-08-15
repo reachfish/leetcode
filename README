@@ -78,6 +78,10 @@ cur = min { cur + 1, i - last_ccur }
 
 遍历，使用栈
 
+##21 merge two sorted lists 合并两个排序的链表
+
+遍历，保存当前节点
+
 ##22 generate parentheses n个(和n个)的正确匹配枚举
 递归可得， helper(res, s, left, right)
 f(n) = sum { f(i) * f(n-i) },  i = 1, 2, ..., n-1

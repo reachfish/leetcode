@@ -86,6 +86,17 @@ cur = min { cur + 1, i - last_ccur }
 递归可得， helper(res, s, left, right)
 f(n) = sum { f(i) * f(n-i) },  i = 1, 2, ..., n-1
 
+##23 merge k sorted lists 合并k个有序链表
+使用大根堆优先队列进行合并
+
+```c
+struct cmp{
+	bool operator()(ListNode* l, ListNode* r){
+		return l->val > r->val;
+	}
+}
+```
+
 ##30 substring with concatenation of all words 给定一个词典，且词典中的词等长，找出一个字符串中所有子串，使得其恰好包含词典中所有的词。
 从字符串任一位置开始，判断其是否恰好包含这个词典中的所有词。
 

@@ -112,6 +112,8 @@ for(i=1;i<size;i++){
 }
 ```
 
+##27 remove element 删除数组中某个元素
+
 ##30 substring with concatenation of all words 给定一个词典，且词典中的词等长，找出一个字符串中所有子串，使得其恰好包含词典中所有的词。
 从字符串任一位置开始，判断其是否恰好包含这个词典中的所有词。
 

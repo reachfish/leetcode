@@ -352,3 +352,9 @@ i = j - 1;
 ###662 maximum Width of binary tree 树的最大宽度
 
 递归遍历访问即可。
+
+###665 non decreasing array 至多修改一个数，问该数列能否成为非减数列
+
+当 a[i-1] > a[i] 时：
+若 a[i-2] > a[i] 则 x = a[i-1] 否则为 a[i]
+修改i-2, i-1, i这三数为 a[i-2], x, x

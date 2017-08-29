@@ -330,3 +330,8 @@ dp[i][j] = dp[i+1][j-1] && s[i]==s[j]
 ###654 maximum binary tree 根据数组构建二叉树，根结点为最大数
 
 递归求解
+
+###657 judge route circle 判断LRUD的一系列操作后是否回到原点
+记录两个变量 left, up，LR修改left, UD修改up。
+最后判断 left==0 && up==0
+

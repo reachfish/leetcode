@@ -348,3 +348,7 @@ i = j - 1;
 ###661 image smoother 图像按九宫格平滑
 
 遍历计算即可。
+
+###662 maximum Width of binary tree 树的最大宽度
+
+递归遍历访问即可。

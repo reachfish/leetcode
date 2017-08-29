@@ -335,3 +335,12 @@ dp[i][j] = dp[i+1][j-1] && s[i]==s[j]
 记录两个变量 left, up，LR修改left, UD修改up。
 最后判断 left==0 && up==0
 
+###658 find k closest elements 排序数组中找出k个和x最接近的数
+
+```c
+j = lower_bound(a.begin(), a.end(), x) - a.begin();
+i = j - 1;
+
+//a[i] < x <= a[j]
+//然后从i和j向两边推进
+```

@@ -74,6 +74,9 @@ cur = min { cur + 1, i - last_ccur }
 ##18 4sum 求数组中四数和为0的所有unique情况
 类似3sum，从排序，从左边找两数，然后再找两数和为0，时间复杂度为O(n^3)
 
+##19 remove nth node from end of list
+一个快指针，一个慢指针，快指针先移动 n-1 步；接着移动两个指针，并且记录慢指针的前一个指针。
+
 ##20 valid parentheses  判断括号序列是否正确
 
 遍历，使用栈

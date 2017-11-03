@@ -385,3 +385,12 @@ else{
 	len = 1;
 }
 ```
+
+### 680 valid palindrome ii 判断某个字符串在最多删除一个字符的情况下，是否为回文串
+
+```c
+if(s[start++] != s[end--]){
+	return is palindrome(s, start -1, end) || is palindrome(s, start, end + 1);
+}
+```
+

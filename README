@@ -372,3 +372,16 @@ i = j - 1;
 先分析该树的特点： 父节点=min(左孩子结点，右孩子结点) ==> 根结点是最小结点 ==> 只要找出比根结点大的最小结点即可。
 
 递归可解
+
+### 674 longest continuous increasing subsequence 求数列中递增的连续子数列的最大长度
+
+递增法：
+
+```c
+if(cur > pre){
+	len++;
+}
+else{
+	len = 1;
+}
+```

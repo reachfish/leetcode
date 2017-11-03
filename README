@@ -364,16 +364,16 @@ i = j - 1;
 若 a[i-2] > a[i] 则 x = a[i-1] 否则为 a[i]
 修改i-2, i-1, i这三数为 a[i-2], x, x
 
-###669 trim a binary search tree 对二叉搜索树，给定区间，返回落在区间内的一棵二叉搜索树
+###[E]669 trim a binary search tree 对二叉搜索树，给定区间，返回落在区间内的一棵二叉搜索树
 递归遍历，不断判断当前结点是否落在给定区间
 
-###671 second minimum node in a binary tree  查找二叉树中第二小的结点，该二叉树中父节点取孩子结点的最小值
+###[E]671 second minimum node in a binary tree  查找二叉树中第二小的结点，该二叉树中父节点取孩子结点的最小值
 
 先分析该树的特点： 父节点=min(左孩子结点，右孩子结点) ==> 根结点是最小结点 ==> 只要找出比根结点大的最小结点即可。
 
 递归可解
 
-### 674 longest continuous increasing subsequence 求数列中递增的连续子数列的最大长度
+###[E] 674 longest continuous increasing subsequence 求数列中递增的连续子数列的最大长度
 
 递增法：
 
@@ -386,11 +386,17 @@ else{
 }
 ```
 
-### 680 valid palindrome ii 判断某个字符串在最多删除一个字符的情况下，是否为回文串
+###[E] 680 valid palindrome ii 判断某个字符串在最多删除一个字符的情况下，是否为回文串
 
 ```c
 if(s[start++] != s[end--]){
 	return is palindrome(s, start -1, end) || is palindrome(s, start, end + 1);
 }
 ```
+
+###[E] 682 basketball game 篮球计分和 
+
+分C(撤销),D(翻倍),+(前两轮之和),普通数字四种
+
+一次遍历计算既可以
 

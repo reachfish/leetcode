@@ -400,6 +400,29 @@ if(s[start++] != s[end--]){
 
 一次遍历计算既可以
 
+###[E] 697.degree-of-an-array 数组的度定义为当中元素的最大出现次数，求连续子数组，且它的度等于给定其度，求出连续子数组的最短长度
+
+```c
+ for(int i=0; i<arr.len; i++){
+	 int num = arr[i];
+	 freq[num++];
+
+	 if(!firstPos.count(num)){
+		 firstPos[num] = i;
+	 }
+
+	 len = i - firstPos[num] + 1;
+	 //update degree && min_len
+	 if(freq[num] > degree){
+		degree = freq[num];
+		min_len = len;
+	 }
+	 else if(freq[num]==degree && len < min_len){
+		 min_len = len;
+	 }
+ }
+```
+
 ###[E] 717 1 bit and 2 bit characters
 
 两个字母A, B， A编码为0， B编码为10 或 11， 给定AB串的0-1编码串，问最后一个字符是哪个

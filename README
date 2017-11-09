@@ -400,6 +400,10 @@ if(s[start++] != s[end--]){
 
 一次遍历计算既可以
 
+###[E] 693 binary number with alternating bits
+
+判断整数的各位相邻数字都是不同的
+
 ###[E] 696 count binary substrings
 
 求相等次数的01子串的个数

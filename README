@@ -400,6 +400,10 @@ if(s[start++] != s[end--]){
 
 一次遍历计算既可以
 
+###[E] 690 employee importance 求员工及其下属的累加importance
+
+建树，递归累加求和即可以了。
+
 ###[E] 693 binary number with alternating bits
 
 判断整数的各位相邻数字都是不同的

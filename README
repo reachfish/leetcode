@@ -400,6 +400,12 @@ if(s[start++] != s[end--]){
 
 一次遍历计算既可以
 
+###[E] 687 longest univalue path 求二叉树中相同结点路径的最大长度
+
+求二叉树中相同结点路径的最大长度。
+
+递归遍历即可以了。
+
 ###[E] 690 employee importance 求员工及其下属的累加importance
 
 建树，递归累加求和即可以了。

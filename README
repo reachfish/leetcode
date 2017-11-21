@@ -446,3 +446,7 @@ if(s[start++] != s[end--]){
 两个字母A, B， A编码为0， B编码为10 或 11， 给定AB串的0-1编码串，问最后一个字符是哪个
 
 一次遍历判断即可
+
+###[M] 718 maximum length of repeated subarray 求两个数组相同的公共子数组的最大长度
+
+使用动态规划算法  dp[i][j] = A[i]==B[j] ? dp[i-1][j-1] + 1 : 0;

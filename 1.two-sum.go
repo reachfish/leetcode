@@ -28,8 +28,6 @@
  * 
  */
 
-package main
-
 import "sort"
 
 type NumWithIndex struct {

@@ -22,9 +22,15 @@
 
 简单。
 
-#### palindrome number
+#### 9. palindrome number
 
 判断一个int是否为回文数。
+
+简单。
+
+#### 14. Longest Common Prefix
+
+找一组字符串的最长公共前缀。
 
 简单。
 

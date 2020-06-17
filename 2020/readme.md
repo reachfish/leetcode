@@ -16,6 +16,11 @@
 
 简单。
 
+#### 5. longest palindromic substring
+
+求最长回文子串。
+
+简单。
 
 #### 未完成
 

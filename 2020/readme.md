@@ -28,6 +28,12 @@
 
 简单。
 
+#### 11. container with most water
+
+一个int数组，每个数表示板高，求这些板能容纳最多的水。
+
+简单。
+
 #### 14. Longest Common Prefix
 
 找一组字符串的最长公共前缀。

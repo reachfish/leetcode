@@ -64,3 +64,9 @@
 
 简单。
 
+#### 19.remove Nth node from end of list
+
+删除链表中倒数第n个结点，要求一次遍历。
+
+简单。
+

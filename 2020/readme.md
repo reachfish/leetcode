@@ -195,3 +195,8 @@ repeat count last word and speak: 1=>11=>21=>1211。
 
 中等。
 
+#### 53. maximum subarray
+
+求一个包含正负数数组中，连续子数组的最大和。
+
+简单。

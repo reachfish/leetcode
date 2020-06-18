@@ -157,3 +157,11 @@
 repeat count last word and speak: 1=>11=>21=>1211。
 
 简单。
+
+#### 44. wildcard matching
+
+正则表达式匹配，包括"\*"和?两种。
+
+递归，挨个字符比较。使用dp备忘录。
+
+困难。

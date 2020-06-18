@@ -152,3 +152,8 @@
 
 简单。
 
+#### 38. count and say
+
+repeat count last word and speak: 1=>11=>21=>1211。
+
+简单。

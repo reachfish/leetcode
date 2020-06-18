@@ -126,3 +126,9 @@
 
 简单。
 
+##### 28. implement strStr
+
+实现一个找子串strstr的功能。
+
+简单。
+

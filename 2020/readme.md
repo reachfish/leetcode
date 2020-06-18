@@ -132,3 +132,9 @@
 
 简单。
 
+#### 30. substring with concatenation of all words
+
+给出一批字符串和一个大字符串，要求找出大字符串中，所有这批小串拼接起来的子串。
+
+困难。
+

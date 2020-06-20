@@ -216,3 +216,9 @@ repeat count last word and speak: 1=>11=>21=>1211。
 sort区间by区间开始，然后合并即可。
 
 中等-。
+
+#### 58. length of last word
+
+字符串包含字母和空格，求最后一个单词的长度。
+
+简单。

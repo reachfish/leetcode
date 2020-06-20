@@ -208,3 +208,11 @@ repeat count last word and speak: 1=>11=>21=>1211。
 简单。
 
 分成四个方向遍历即可。
+
+#### 56. merge intervals
+
+合并区间。
+
+sort区间by区间开始，然后合并即可。
+
+中等-。

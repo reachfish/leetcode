@@ -326,3 +326,12 @@ combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1
 递归，对二位数组中每个位置，搜索从该字符开始是否匹配该字符串。
 
 中等。
+
+#### 80. remove duplicates from sorted array
+
+从一个排序数组中去除重复数字，使得结果中每个数字最多出现两次，要求原地操作。
+
+遍历，记录上一个数字，以及它的出现次数和位置，左移到它旁边即可。
+
+中等。
+

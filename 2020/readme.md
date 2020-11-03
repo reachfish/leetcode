@@ -308,3 +308,13 @@ vector int表示的大数，求其加1的结果。
 combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1]}
 
 中等。
+
+#### 78. subsets
+
+一个集合，里面各个元素各不相同。
+
+求出该集合所有的子集。
+
+递归，对元素，把它分到集合和部分集合两种情况。
+
+中等。

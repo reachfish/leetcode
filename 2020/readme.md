@@ -298,3 +298,13 @@ vector int表示的大数，求其加1的结果。
 使用start数组记录每个数字首次出现的位置。扫描该数组，当遇到cur小于prev时，则把首个start[k] >= 0的数跟当前cur交换位置，且k从cur+1开始递增。
 
 中等。
+
+#### 77. combinations 
+
+求[1 .. n]中选k个数的组合。
+
+递归，对i分选i和不选i的情况。
+
+combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1]}
+
+中等。

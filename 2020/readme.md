@@ -343,3 +343,11 @@ combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1
 
 简单。
 
+#### 83. remove duplicates from sorted list
+
+有一个排序链表，如果一个结点出现重复，则把重复的元素去掉，但保留该数字。
+
+遍历，对结点p：如果p->val == prev->val，则删除p。
+
+简单。
+

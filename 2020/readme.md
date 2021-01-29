@@ -351,3 +351,10 @@ combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1
 
 简单。
 
+#### 86 partition list
+
+给定一个链表和一个值，把链表分成两段拼接起来，前一段的值小于该给定值，后一段的值大于等于该给定值。
+
+要求这两段内的元素保持在原链表中的相对顺序。
+
+简单。

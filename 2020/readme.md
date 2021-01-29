@@ -358,3 +358,9 @@ combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1
 要求这两段内的元素保持在原链表中的相对顺序。
 
 简单。
+
+#### 88 merge sorted array
+
+原地合并两个有序数组，第一个数组的空间足够长。
+
+简单。

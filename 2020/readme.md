@@ -364,3 +364,10 @@ combinations[i; n, k] = combinations[i+1; n, k] + {i, combinations[i+1; n-1, k-1
 原地合并两个有序数组，第一个数组的空间足够长。
 
 简单。
+
+#### 89 gray code
+
+n bit 0-1s，要求相邻两数只有1bit不一样，求出其中一个排序。
+
+简单。设定一个表，每次变动1bit，如果该数未曾出现过，则把它加入到列表中取。
+

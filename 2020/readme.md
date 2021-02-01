@@ -422,3 +422,11 @@ dp[n] = sum(dp[k] * dp[i-k-1]);
 使用动态规划。
 
 中等。
+
+#### 98 validate binary search tree
+
+判断一个二叉树是否为搜索二叉树。
+
+递归求解。
+
+简单。

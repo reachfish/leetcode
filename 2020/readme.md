@@ -398,3 +398,11 @@ n bit 0-1s，要求相邻两数只有1bit不一样，求出其中一个排序。
 用栈保存，不断push左孩子，在pop时再访问，访问完，再将右孩子入栈。
 
 简单。
+
+#### 95 unique binary search trees
+
+求1-n二叉搜索树的所有情况。
+
+递归。设左子树为left_vec, 右子树所有情况为right_vec，则本节点所有情况为：left_vec * right_vec。
+
+中等。

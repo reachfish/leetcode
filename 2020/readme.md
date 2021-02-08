@@ -505,3 +505,10 @@ std::reverse(other.begin(), other.end());
 
 递归，简单。
 
+#### 110 balanced binary tree
+
+
+判断一棵二叉树是否为平衡二叉树。
+
+简单。
+

@@ -529,3 +529,13 @@ std::reverse(other.begin(), other.end());
 求出一棵二叉树中，所有从根节点到叶子节点的路径，使得该路径上所有节点之和为目标值。
 
 简单。
+
+#### 114 flatten binary tree to linked list
+
+把二叉树转化成链表，left指针恒为0， right指针为先序遍历的下一个节点。
+
+记录prev结点，然后prev->right = cur;
+
+中等。
+简单。
+

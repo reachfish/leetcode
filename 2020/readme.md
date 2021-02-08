@@ -472,3 +472,12 @@ for (auto it=cur.rbegin(); it != cur.rend(); it++) {
 }
 std::reverse(other.begin(), other.end());
 ```
+
+#### 104 maximum depth of binary tree
+
+求树的最大深度。
+
+递归。
+
+简单。
+

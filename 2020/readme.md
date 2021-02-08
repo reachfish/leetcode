@@ -498,3 +498,10 @@ std::reverse(other.begin(), other.end());
 二叉树遍历，自底向上，从左往右。
 
 简单。
+
+#### 108 convert sorted array to binary search tree
+
+将一个排序数组转化成平衡二叉搜索树。
+
+递归，简单。
+

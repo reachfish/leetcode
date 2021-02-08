@@ -481,3 +481,8 @@ std::reverse(other.begin(), other.end());
 
 简单。
 
+#### 105 construct binary tree from preorder and inorder traversal
+
+根据先序和中序遍历序，重构二叉树。
+
+简单。

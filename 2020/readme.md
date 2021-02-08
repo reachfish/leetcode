@@ -454,3 +454,21 @@ dp[n] = sum(dp[k] * dp[i-k-1]);
 使用队列。
 
 简单。
+
+#### 103 binary tree zigzag level order traversal
+
+按层遍历，使用zigzag顺序，第奇数层从左往右，第偶数层从右往左。
+
+使用双vector。
+
+遍历偶数层时：
+
+```c++
+for (auto it=cur.rbegin(); it != cur.rend(); it++) {
+   auto p = *it; 
+   level.push_back(p->val);
+   if (p->right) { other.push_back(p->right); }
+   if (p->left) { other.push_back(p->left); }
+}
+std::reverse(other.begin(), other.end());
+```

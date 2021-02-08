@@ -537,5 +537,14 @@ std::reverse(other.begin(), other.end());
 记录prev结点，然后prev->right = cur;
 
 中等。
-简单。
 
+#### 116 populating next right pointers in each node
+
+在一棵满二叉树中，设置节点的next为同level中下一个节点。要用原地算法，但可以使用递归。
+
+```c++
+p->left->next = p->right;
+p->right->next = p->next->left;
+```
+
+简单。

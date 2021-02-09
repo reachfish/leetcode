@@ -562,3 +562,11 @@ p->right->next = p->next->left;
 输出帕斯卡三角系数。
 
 简单。
+
+#### 119.pascals-triangle-ii
+
+输出帕斯卡三角第n行的数据。
+
+使用公式推导即可。
+
+简单。

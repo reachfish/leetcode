@@ -548,3 +548,11 @@ p->right->next = p->next->left;
 ```
 
 简单。
+
+#### 117.populating-next-right-pointers-in-each-node-ii
+
+在任意一棵二叉树中，设置节点的next为同level中下一个节点。要用原地算法。
+
+按层设置。
+
+较困难。

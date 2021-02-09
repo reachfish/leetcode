@@ -556,3 +556,9 @@ p->right->next = p->next->left;
 按层设置。
 
 较困难。
+
+#### 118.pascals-triangle
+
+输出帕斯卡三角系数。
+
+简单。

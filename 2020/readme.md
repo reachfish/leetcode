@@ -587,4 +587,8 @@ s[i] = min { s[i-1], s[i] } + triangle[i];
 
 简单。
 
+#### 124.binary-tree-maximum-path-sum
 
+求二叉树中某条路径的最大值
+
+s(p) = max(s(p->left), s(p->right), max(p one side), max(p two side))

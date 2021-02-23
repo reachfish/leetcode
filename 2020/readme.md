@@ -600,3 +600,9 @@ s(p) = max(s(p->left), s(p->right), max(p one side), max(p two side))
 判断一个字符串是否为回文串，只考虑字符串中出现的字母和数字情况，且字母忽略大小写。
 
 简单。
+
+#### 129.sum-root-to-leaf-numbers
+
+求二叉树中所有从根节点到叶子节点组成路径上数字之和。
+
+简单。

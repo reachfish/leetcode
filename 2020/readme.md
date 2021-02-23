@@ -592,3 +592,11 @@ s[i] = min { s[i-1], s[i] } + triangle[i];
 求二叉树中某条路径的最大值
 
 s(p) = max(s(p->left), s(p->right), max(p one side), max(p two side))
+
+中等
+
+#### 125.valid-palindrome
+
+判断一个字符串是否为回文串，只考虑字符串中出现的字母和数字情况，且字母忽略大小写。
+
+简单。

@@ -632,3 +632,15 @@ for (auto num : nums) {
 
 res = sum(bit_i << i)
 ```
+
+#### 138.copy-list-with-random-pointer
+
+链表中每个节点有一个random指针，指向链表中的某个节点。
+
+深拷贝这种链表。
+
+法一：使用map[origin node] = clone node记录；
+
+法二： clone->next->random = p->next->random
+
+中等。

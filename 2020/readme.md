@@ -620,3 +620,15 @@ s(p) = max(s(p->left), s(p->right), max(p one side), max(p two side))
 使用异或运算。
 
 简单。
+
+#### 137.single-number-ii
+
+一个数组，只有一个数字出现一次，其他数字都出现三次。求这个只出现一次的数字。
+
+```c++
+for (auto num : nums) {
+  bit_i = (bit_i + bit i of num) % 3
+}
+
+res = sum(bit_i << i)
+```

@@ -612,3 +612,11 @@ s(p) = max(s(p->left), s(p->right), max(p one side), max(p two side))
 克隆一个图。
 
 简单。用map记录下映射关系。
+
+#### 136.single-number
+
+一个数组，只有一个数字出现一次，其他数字都出现两次。求这个只出现一次的数字。
+
+使用异或运算。
+
+简单。

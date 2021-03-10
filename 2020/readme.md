@@ -656,3 +656,17 @@ res = sum(bit_i << i)
 判断链表是否有环。
 
 简单。用两个指针，第一个每次移动一步，第二个每次移动两步，在判断这两个指针是否相等。
+
+#### 144.binary-tree-preorder-traversal
+
+非递归先序遍历二叉树。
+
+使用栈。进栈时:
+```c++
+	for (; p!= nullptr; p=p->left) {
+	  visit(p);
+	  stk.push(p);
+	}
+```
+
+中等。

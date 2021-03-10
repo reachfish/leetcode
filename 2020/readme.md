@@ -670,3 +670,13 @@ res = sum(bit_i << i)
 ```
 
 中等。
+
+#### 146.lru-cache
+
+实现一个LRU cache，要求get/put的时间复杂度为O(1).
+
+使用unordered_map和list来实现。
+
+这里认为unordered_map的get/put的时间复杂度为O(1).
+
+简单。

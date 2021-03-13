@@ -688,3 +688,9 @@ res = sum(bit_i << i)
 以第i个节点作为考虑，依次考虑经过该点的直线中，最大的直线包含的顶点个数。
 
 中等。
+
+#### 150.evaluate-reverse-polish-notation
+
+求逆波兰式的值。
+
+用栈即可，简单。

@@ -717,3 +717,12 @@ cmin = min(v1, v2, v3)
 ```
 
 简单。
+
+#### 155.min-stack
+
+设计一个带min函数的栈。
+
+用vector保存elem & min即可。
+
+简单。
+

@@ -702,3 +702,18 @@ res = sum(bit_i << i)
 两次逆序。
 
 简单+。
+
+#### 152.maximum-product-subarray
+
+求整数数组中，连续最大子数组的乘积。
+
+```c++
+v1 = cur;
+v2 = cmax * cur;
+v3 = cmin * cur;
+
+cmax = max(v1, v2, v3)
+cmin = min(v1, v2, v3)
+```
+
+简单。

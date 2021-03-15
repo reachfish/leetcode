@@ -726,3 +726,8 @@ cmin = min(v1, v2, v3)
 
 简单。
 
+#### 160.intersection-of-two-linked-lists
+
+求两个链表相交的第一个节点。
+
+简单。

@@ -766,3 +766,9 @@ cmin = min(v1, v2, v3)
 求一个数组中多数派数字。多数派是指出现次数超过半数以上。
 
 简单。
+
+#### 171.excel-sheet-column-number
+
+求excel表头(A, B, C, ...) 转成数字。
+
+简单。

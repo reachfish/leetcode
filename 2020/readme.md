@@ -772,3 +772,11 @@ cmin = min(v1, v2, v3)
 求excel表头(A, B, C, ...) 转成数字。
 
 简单。
+
+#### 172.factorial-trailing-zeroes
+
+求n阶乘中尾部0的个数。
+
+count(tail 0) = n/5 + n/25 + n/125 + ...
+
+简单。

@@ -780,3 +780,13 @@ cmin = min(v1, v2, v3)
 count(tail 0) = n/5 + n/25 + n/125 + ...
 
 简单。
+
+#### 179.largest-number
+
+给定一个非负整数数组，求拼接起来的最大数字，用字符串来表示。
+
+```c++
+sort(..., [](a, b) { return str(a) + str(b) > str(b) + str(a); }
+```
+
+简单。

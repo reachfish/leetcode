@@ -807,4 +807,13 @@ sort(..., [](a, b) { return str(a) + str(b) > str(b) + str(a); }
 
 n &= (n-1);
 
+#### 198.house-robber
+
+房子抢劫，相邻两房不能抢，问最大抢劫货位数。
+
+```c++
+ new_cur = std::max(cur, pre + nums[i]);
+ pre = cur;
+ cur = new_cur;
+```
 

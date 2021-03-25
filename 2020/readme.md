@@ -790,3 +790,9 @@ sort(..., [](a, b) { return str(a) + str(b) > str(b) + str(a); }
 ```
 
 简单。
+
+#### 190.reverse-bits
+
+求一个32位数字位逆转后的数字。
+
+简单。

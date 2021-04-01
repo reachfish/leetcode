@@ -944,3 +944,9 @@ if (ch == '0') {
 ```
 
 简单。
+
+#### 232.implement-queue-using-stacks
+
+用栈实现队列。
+
+简单。

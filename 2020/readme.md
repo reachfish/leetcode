@@ -950,3 +950,9 @@ if (ch == '0') {
 用栈实现队列。
 
 简单。
+
+#### 235.lowest-common-ancestor-of-a-binary-search-tree
+
+求二叉搜索树中两节点的最低公共父节点。
+
+简单。

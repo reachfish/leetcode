@@ -31,6 +31,12 @@
 
 简单。
 
+#### 4.median-of-two-sorted-arrays
+
+求两个已排序数组，它们的中位数。
+
+困难。
+
 #### 5. longest palindromic substring
 
 求最长回文子串。

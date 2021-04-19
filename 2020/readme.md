@@ -1028,3 +1028,9 @@ if (ch == '0') {
 从一个data stream中找中间元素。
 
 简单。
+
+#### 297.serialize-and-deserialize-binary-tree
+
+设计一种将二叉树序列化和反序列的方式。
+
+中等。

@@ -1022,3 +1022,9 @@ if (ch == '0') {
 #### 292.nim-game
 
 一堆石子，每次只能取1~3个，你先取，你朋友再取。问你是否有必赢的方法。
+
+#### 295.find-median-from-data-stream
+
+从一个data stream中找中间元素。
+
+简单。

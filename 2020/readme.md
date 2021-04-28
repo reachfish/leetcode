@@ -1120,3 +1120,11 @@ dp[i, j] = max { 周围比它大的节点的dp[i', j'] } + 1。
 N = max{ sum(node's child's max), p->val + sum(exclude child's max)}
 
 中等。
+
+#### 338.counting-bits
+
+求0-n中各个数字的二进制表示中1出现个数。
+
+count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
+
+简单。

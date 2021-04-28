@@ -1110,3 +1110,13 @@ dp[i, j] = max { 周围比它大的节点的dp[i', j'] } + 1。
 字符串数组中，求出所有两个拼接起来可组成的回文串。
 
 中等。
+
+#### 337.house-robber-iii
+
+强盗抢劫一棵树，相邻两个节点不能同时抢，问最大抢劫量。
+
+典型。
+
+N = max{ sum(node's child's max), p->val + sum(exclude child's max)}
+
+中等。

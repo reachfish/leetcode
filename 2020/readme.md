@@ -4,7 +4,7 @@
 
 2. 动态规划。
 
-3. int中只取最后一位1的数字位last=r & (~(r-1))。
+3. int中只取最后一位1的数字位last=r & (~(r-1))。去掉最后一位1：r & (r-1)。
 
 4. 动态规划+记账功能。
 
@@ -1126,5 +1126,13 @@ N = max{ sum(node's child's max), p->val + sum(exclude child's max)}
 求0-n中各个数字的二进制表示中1出现个数。
 
 count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
+
+简单。
+
+#### 341.flatten-nested-list-iterator
+
+嵌套List要求支持next, hasNext操作。
+
+使用栈操作。
 
 简单。

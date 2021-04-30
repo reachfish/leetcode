@@ -1192,3 +1192,9 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 求出twitter中关注者和自己最近post的10条tweet。
 
 简单。
+
+#### 357.count-numbers-with-unique-digits
+
+求n位数字中各数字互不相同的数字有多少个。
+
+简单。

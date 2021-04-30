@@ -1186,3 +1186,9 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 求嵌套装信封的最大个数。
 
 简单。
+
+#### 355.design-twitter
+
+求出twitter中关注者和自己最近post的10条tweet。
+
+简单。

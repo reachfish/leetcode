@@ -1168,3 +1168,9 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 一个数组中，按出现次数倒排，求出现最频繁的k个数字。
 
 简单。
+
+#### 349.intersection-of-two-arrays
+
+求两个数组的交集。
+
+简单。

@@ -1180,3 +1180,9 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 求两个数组的交集。非unique。
 
 简单。
+
+#### 354.russian-doll-envelopes
+
+求嵌套装信封的最大个数。
+
+简单。

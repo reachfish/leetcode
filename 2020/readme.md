@@ -1238,3 +1238,11 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 求第K大用堆。
 
 简单。
+
+#### 380.insert-delete-getrandom-o1
+
+支持insert/remove/random的set集合。
+
+用vector和map来实现。
+
+简单。

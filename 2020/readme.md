@@ -1230,3 +1230,11 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 动态规划。
 
 简单。
+
+#### 378.kth-smallest-element-in-a-sorted-matrix
+
+二维矩阵中，每行递增， 每列递增。 求第K大元素。
+
+求第K大用堆。
+
+简单。

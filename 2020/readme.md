@@ -10,6 +10,8 @@
 
 5. 最小/大K个元素，一般可用堆。
 
+6. 注意溢出(出现加法)、异常、边界。
+
 
 ## 总结
 
@@ -1212,5 +1214,11 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 #### 373.find-k-pairs-with-smallest-sums
 
 两个数组，找出它们当中最小k个pair。
+
+简单。
+
+#### 374.guess-number-higher-or-lower
+
+猜数。
 
 简单。

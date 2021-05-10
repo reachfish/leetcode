@@ -1258,3 +1258,11 @@ count(i) = i & 1 ? count(i-1) + 1 : count(i>>1)
 shuffle一个数组。
 
 简单。
+
+#### 385.mini-parser
+
+解析nested integer串。
+
+使用栈。
+
+简单。

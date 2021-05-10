@@ -1266,3 +1266,9 @@ shuffle一个数组。
 使用栈。
 
 简单。
+
+#### 387.first-unique-character-in-a-string
+
+求字符串中第一个unique字符。
+
+简单。

@@ -12,6 +12,29 @@
 
 6. 注意溢出(出现加法)、异常、边界。
 
+7. 枚举+总结规律。
+
+## 经典题目
+
+**快排**
+
+```c++
+int partition(int nums[], int low, int high) {
+    std::swap(nums[high], nums[(low+high)/2]);
+	int i = low - 1;
+	int anchor = nums[high];
+	for (int j=low; j<high; j++) {
+		if (nums[j] < anchor) {
+		    std::swap(nums[j], nums[++i]);
+		}
+	}
+
+	std::swap(nums[++i], nums[high]);
+
+	return i;
+}
+```
+
 
 ## 总结
 
@@ -1278,3 +1301,11 @@ shuffle一个数组。
 求出两个字符串中，比它多出一个字符的字符。
 
 简单。
+
+#### 390.elimination-game
+
+每隔一个数删除一数，先从左往右，再从右往左。问最后一个是什么数。
+
+总结规律，用递归即可。
+
+中等。

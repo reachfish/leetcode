@@ -1323,3 +1323,10 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 使用栈，分别保存计数和子串。
 
 中等。
+
+#### 395.longest-substring-with-at-least-k-repeating-characters
+
+求一个字符串它最长的子串，使得该子字符串中每个字符最少出现k次。
+
+中等。
+

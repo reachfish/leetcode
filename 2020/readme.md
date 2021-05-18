@@ -1330,3 +1330,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 中等。
 
+#### 396.rotate-function
+
+求数组中 0 * a[k] + 1 * a[k+1] + ... + (n-1) * a[k-1] 的最大值。
+
+简单。
+

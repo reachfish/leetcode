@@ -1341,3 +1341,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 数组中随机某个target，返回它的位置。数组中元素可能包含重复。
 
 简单。
+
+#### 404.sum-of-left-leaves
+
+求左叶子之和。
+
+简单。

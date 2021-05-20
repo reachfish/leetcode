@@ -1347,3 +1347,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 求左叶子之和。
 
 简单。
+
+#### 409.longest-palindrome
+
+求字符串中所有字符可组成的最长回文串。
+
+简单。

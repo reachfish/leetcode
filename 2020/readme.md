@@ -1359,3 +1359,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 求数组中子数列的个数。子数列满足：所有数字成等差数列，且包含最少3个数字。
 
 简单。
+
+#### 414.third-maximum-number
+
+求数组中第三distict大的数字。
+
+简单。

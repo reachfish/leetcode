@@ -1373,3 +1373,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 数字用字符串来表示。
 
 简单。
+
+#### 416.partition-equal-subset-sum
+
+将一个数组分成两个集合，两集合它们内部的元素之和相等。
+
+中等。

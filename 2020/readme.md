@@ -555,6 +555,12 @@ std::reverse(other.begin(), other.end());
 
 递归，简单。
 
+##### 109.convert-sorted-list-to-binary-search-tree
+
+根据一个升序链表构建一棵平衡二叉树。
+
+简单。
+
 #### 110 balanced binary tree
 
 
@@ -1379,3 +1385,11 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 将一个数组分成两个集合，两集合它们内部的元素之和相等。
 
 中等。
+
+#### 419.battleships-in-a-board
+
+一个二维矩阵有'X'和'.'组成。X表示战船，战船要么长为1，要么宽为1，且两战船不会挨着。
+
+问二维矩阵中有多少条战船。
+
+简单。

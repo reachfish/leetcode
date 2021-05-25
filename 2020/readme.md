@@ -713,6 +713,12 @@ res = sum(bit_i << i)
 
 简单。用两个指针，第一个每次移动一步，第二个每次移动两步，在判断这两个指针是否相等。
 
+#### 142.linked-list-cycle-ii
+
+有环链表，求环的入口。
+
+中断。
+
 #### 144.binary-tree-preorder-traversal
 
 非递归先序遍历二叉树。

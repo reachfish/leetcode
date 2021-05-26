@@ -1400,6 +1400,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 430.flatten-a-multilevel-doubly-linked-list
+
+包含child list的双向list flatten。
+
+简单。
+
 #### 445.add-two-numbers-ii
 
 求两个链表表示的整数之和。

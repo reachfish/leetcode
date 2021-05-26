@@ -1407,3 +1407,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 双指针，一快一慢。
 
 简单。
+
+#### 1290.convert-binary-number-in-a-linked-list-to-integer
+
+二进制的链表表示，把它转成10进制整数。
+
+简单。

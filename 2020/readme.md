@@ -1433,3 +1433,9 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 注意：路径需要连续。
 
 简单。
+
+#### 1669.merge-in-between-linked-lists
+
+链表合并。
+
+简单。

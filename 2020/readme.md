@@ -1399,3 +1399,11 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 问二维矩阵中有多少条战船。
 
 简单。
+
+#### 876.middle-of-the-linked-list
+
+求链表中间结点。
+
+双指针，一快一慢。
+
+简单。

@@ -1418,6 +1418,10 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 519.random-flip-matrix
+
+将二维矩阵中出现的0随机转成1。
+
 #### 528.random-pick-with-weight
 
 按权重随机。

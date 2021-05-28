@@ -1412,6 +1412,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 470.implement-rand10-using-rand7
+
+通过rand7函数来求rand10。
+
+简单。
+
 #### 710.random-pick-with-blacklist
 
 给定[0, n)以及blacklist，求出它当中的一个随机数，要求每个数出现机会一样。

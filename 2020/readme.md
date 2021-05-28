@@ -1412,6 +1412,16 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 710.random-pick-with-blacklist
+
+给定[0, n)以及blacklist，求出它当中的一个随机数，要求每个数出现机会一样。
+
+n超大时，用`map<index, start>`来保存区间。
+
+中等。
+
+典型。
+
 #### 876.middle-of-the-linked-list
 
 求链表中间结点。
@@ -1439,3 +1449,4 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 链表合并。
 
 简单。
+

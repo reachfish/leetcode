@@ -219,6 +219,12 @@ repeat count last word and speak: 1=>11=>21=>1211。
 递归枚举。
 
 
+#### 47.permutations-ii
+
+一个数组中可能有重复数字，枚举所有的排列情况。
+
+中等。
+
 #### 49. group anagrams
 
 找出一组字符串集合中，具有相同字母的字符串集。

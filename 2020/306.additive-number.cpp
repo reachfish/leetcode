@@ -62,23 +62,76 @@
 class Solution {
  public:
   bool isAdditiveNumber(string num) {
-    const int kTLen = num.size();
-    std::string counter(num.size());
-    for (int len1 = 1; len1 <= kTLen / 2; len1++) {
-      for (int k = 0; k < len1; k++) {
-        buffer[k] = num[len1 - k - 1];
+    for (int m = 1; m <= num.size() / 2; m++) {
+      if (m > 1 && num[0] == '0') {
+        break;
       }
-      for (int len2 = 1; len1 + len2 <= kTLen / 2; len2++) {
-        int start = len1;
-        int blen = len1;
-        add(buffer, blen);
-        if (match(num, buffer, len1, len2)) {
+
+      for (int n = 1; std::max(m, n) <= num.size() - m - n; n++) {
+        if (n > 1 && num[m] == '0') {
+          break;
+        }
+
+        if (isAdd(num, m, n)) {
           return true;
         }
       }
     }
+    return false;
+  }
+
+  bool isAdd(const std::string& num, int m, int n) {
+    std::string a = num.substr(0, m);
+    std::string b = num.substr(m, n);
+    uint32_t total_len = m + n;
+    for (;;) {
+      std::string c = addNum(a, b);
+      total_len += c.size();
+      if (total_len > num.size()) {
+        return false;
+      }
+
+      if (num.compare(total_len - c.size(), c.size(), c) != 0) {
+        return false;
+      }
+
+      if (total_len == num.size()) {
+        return true;
+      }
+
+      a.swap(b);
+      b.swap(c);
+    }
 
     return false;
+  }
+
+  std::string addNum(const std::string& a, const std::string& b) {
+    std::string s;
+    s.reserve(std::max(a.size(), b.size()) + 1);
+    int i = a.size() - 1;
+    int j = b.size() - 1;
+    int carry = 0;
+    while (i >= 0 || j >= 0) {
+      int c = (i >= 0 ? a[i] - '0' : 0) + (j >= 0 ? b[j] - '0' : 0) + carry;
+      if (c >= 10) {
+        c -= 10;
+        carry = 1;
+      } else {
+        carry = 0;
+      }
+      s.push_back(c + '0');
+      i--;
+      j--;
+    }
+
+    if (carry > 0) {
+      s.push_back(carry + '0');
+    }
+
+    std::reverse(s.begin(), s.end());
+
+    return s;
   }
 };
 // @lc code=end

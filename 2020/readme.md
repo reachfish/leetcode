@@ -1366,6 +1366,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 401.binary-watch
+
+二进制表钟，有n位置位。求有几种情况。
+
+简单。
+
 #### 404.sum-of-left-leaves
 
 求左叶子之和。

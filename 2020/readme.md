@@ -669,6 +669,12 @@ s(p) = max(s(p->left), s(p->right), max(p one side), max(p two side))
 
 简单。
 
+#### 131.palindrome-partitioning
+
+把一个字符串切分成多个回文子串，求出所有的切法。
+
+简单。
+
 #### 133.clone-graph
 
 克隆一个图。

@@ -1468,6 +1468,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 687.longest-univalue-path
+
+求二叉树中最长路径，要求路径上所有节点的值是一样的。
+
+简单。
+
 #### 710.random-pick-with-blacklist
 
 给定[0, n)以及blacklist，求出它当中的一个随机数，要求每个数出现机会一样。

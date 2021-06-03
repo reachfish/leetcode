@@ -1513,6 +1513,14 @@ n超大时，用`map<index, start>`来保存区间。
 
 简单。
 
+#### 977.squares-of-a-sorted-array
+
+一个递增序列。
+
+求它的每个数的平方数序列，同样按递增排序。
+
+简单。
+
 #### 1290.convert-binary-number-in-a-linked-list-to-integer
 
 二进制的链表表示，把它转成10进制整数。

@@ -1506,6 +1506,13 @@ n超大时，用`map<index, start>`来保存区间。
 
 简单。
 
+
+#### 925.long-pressed-name
+
+判断一个字符串是否为另一个字符串长按键盘的结果。
+
+简单。
+
 #### 1290.convert-binary-number-in-a-linked-list-to-integer
 
 二进制的链表表示，把它转成10进制整数。

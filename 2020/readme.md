@@ -1541,3 +1541,9 @@ n超大时，用`map<index, start>`来保存区间。
 
 简单。
 
+#### 1800.maximum-ascending-subarray-sum
+
+求数组中连续递增子序列的最大之和。
+
+简单。
+

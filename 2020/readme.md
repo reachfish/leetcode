@@ -1490,6 +1490,14 @@ n超大时，用`map<index, start>`来保存区间。
 
 典型。
 
+#### 844.backspace-string-compare
+
+两个字符串，包含删除键，问这两个字符串是否相等。
+
+从后往前搜索。
+
+简单。
+
 #### 876.middle-of-the-linked-list
 
 求链表中间结点。

@@ -1520,6 +1520,11 @@ n超大时，用`map<index, start>`来保存区间。
 
 简单。
 
+#### 897.increasing-order-search-tree
+
+二叉树中，将中序遍历的路径中，每个节点的右孩子指向它在中序遍历过程中下一个节点，左孩子指向null。
+
+简单。
 
 #### 925.long-pressed-name
 

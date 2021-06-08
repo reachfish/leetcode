@@ -1498,6 +1498,12 @@ n超大时，用`map<index, start>`来保存区间。
 
 典型。
 
+#### 783.minimum-distance-between-bst-nodes
+
+求二叉搜索树中最小的两个结点之差。
+
+简单。
+
 #### 844.backspace-string-compare
 
 两个字符串，包含删除键，问这两个字符串是否相等。

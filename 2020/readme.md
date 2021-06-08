@@ -1521,6 +1521,12 @@ n超大时，用`map<index, start>`来保存区间。
 
 简单。
 
+### 973.k-closest-points-to-origin
+
+一个点集，求出当中k个离原点最近的点。
+
+简单。
+
 #### 977.squares-of-a-sorted-array
 
 一个递增序列。

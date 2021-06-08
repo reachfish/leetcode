@@ -1532,6 +1532,12 @@ n超大时，用`map<index, start>`来保存区间。
 
 简单。
 
+#### 938.range-sum-of-bst
+
+求二叉搜索树中位于一段范围内所有结点的值之和。
+
+简单。
+
 ### 973.k-closest-points-to-origin
 
 一个点集，求出当中k个离原点最近的点。

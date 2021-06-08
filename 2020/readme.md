@@ -1476,6 +1476,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 538.convert-bst-to-greater-tree
+
+二叉搜索树中，每个节点的值加上所有比大的节点值。
+
+简单。
+
 #### 563.binary-tree-tilt
 
 求左右子树的value之和之差。

@@ -1,24 +1,22 @@
 #include <vector>
+#include <memory>
 
 struct Node {
 	uint64_t ts;
-	uint64_t index;
-	uint32_t vidx;
+	uint32_t index;
 	void (*fn)(void*);
 	void* arg;
+	bool valid;
 
 	bool operator<(const Node& other) const {
-		return ts < other.ts || (ts==other.ts && index < other.index);
+		return ts < other.ts || (ts==other.ts && uint64_t(intptr_t(this)) < uint64_t(intptr_t(&other)));
 	}
 };
 
-struct TimerId {
-	uint64_t ts;
-	uint64_t index;
-	Node* node;
-};
 
-const TimerId kInvalidTimer{0, 0, nullptr};
+typedef std::shared_ptr<Node> TimerId;
+
+const TimerId kInvalidTimer{nullptr};
 
 const uint32_t kMaxTimerSize = 10000;
 
@@ -31,29 +29,23 @@ public:
 
 		uint64_t ts = uint64_t(time(nullptr)) + delay;
 		uint32_t i = tasks_.size();
-		auto node = new Node {ts, next_index_++, i, fn, arg};
-		tasks_.push_back(node);
+		auto node = new Node {ts, i, fn, arg, true};
+		tasks_.emplace_back(node);
 		RefreshUp(i);
 
-		return  {node->ts, node->index, node};
+		return tasks_[node->index];
 	}
 
 	bool Unschedule(const TimerId& id) {
-		if (tasks_.empty()) {
+		if (!id || !id->valid) {
 			return false;
 		}
 
-		auto top = tasks_.front();
-		if (top->ts > id.ts || (top->ts == id.ts && top->index > id.index)) {
-			return false;
-		}
-
-		auto node = id.node;
+		auto node = id.get();
 		node->ts = 0;
-		RefreshUp(node->vidx);
-		assert(node->vidx == 0 && tasks_.front() == node);
+		RefreshUp(node->index);
+		assert(node->index == 0 && tasks_.front().get() == node);
 		Pop();
-		delete node;
 
 		return true;
 	}
@@ -62,17 +54,18 @@ public:
 		while (!tasks_.empty() && tasks_[0]->ts <= time(nullptr)) {
 			auto node = Pop();
 			(*node->fn)(node->arg);
-			delete node;
 		}
 	}
 
 private:
-	Node* Pop() {
+	TimerId Pop() {
 		auto top = tasks_.front();
+		top->valid = false;
 		tasks_[0] = tasks_.back();
-		tasks_[0]->vidx = 0;
+		tasks_[0]->index = 0;
 		tasks_.pop_back();
 		RefreshDown(0);
+
 		return top;
 	}
 
@@ -110,12 +103,11 @@ private:
 
 	void Swap(int i, int j) {
 		std::swap(tasks_[i], tasks_[j]);
-		std::swap(tasks_[i]->vidx, tasks_[j]->vidx);
+		std::swap(tasks_[i]->index, tasks_[j]->index);
 	}
 
 private:
-	std::vector<Node*> tasks_;
-	uint64_t next_index_ = 1;
+	std::vector<std::shared_ptr<Node>> tasks_;
 };
 
 int main() {

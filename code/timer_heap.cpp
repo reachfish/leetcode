@@ -2,11 +2,12 @@
 #include <memory>
 
 struct Node {
+	static constexpr uint32_t kInvalidIndex = (uint32_t) -1;
+
 	uint64_t ts;
 	uint32_t index;
 	void (*fn)(void*);
 	void* arg;
-	bool valid;
 
 	bool operator<(const Node& other) const {
 		return ts < other.ts || (ts==other.ts && uint64_t(intptr_t(this)) < uint64_t(intptr_t(&other)));
@@ -29,7 +30,7 @@ public:
 
 		uint64_t ts = uint64_t(time(nullptr)) + delay;
 		uint32_t i = tasks_.size();
-		auto node = new Node {ts, i, fn, arg, true};
+		auto node = new Node {ts, i, fn, arg};
 		tasks_.emplace_back(node);
 		RefreshUp(i);
 
@@ -37,7 +38,7 @@ public:
 	}
 
 	bool Unschedule(const TimerId& id) {
-		if (!id || !id->valid) {
+		if (!id || id->index == Node::kInvalidIndex) {
 			return false;
 		}
 
@@ -60,11 +61,12 @@ public:
 private:
 	TimerId Pop() {
 		auto top = tasks_.front();
-		top->valid = false;
 		tasks_[0] = tasks_.back();
 		tasks_[0]->index = 0;
 		tasks_.pop_back();
 		RefreshDown(0);
+
+		top->index = Node::kInvalidIndex;
 
 		return top;
 	}

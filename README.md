@@ -319,30 +319,30 @@ map<content, vector<path>> m 按内容索引文件名数组
 1...n的数组中某数重复一次，某数丢失，寻找它们
 两次遍历，一次找出重复的，一次找出丢失的。
 
-##### #646 maximum length or pair chain 不相交区间的最大个数
+##### 646 maximum length or pair chain 不相交区间的最大个数
 使用贪心算法，对区间右侧进行排序，然后从左往右，依次选择可兼容的 
 
-##### #647 palindromic substrings 求回文子串个数
+##### 647 palindromic substrings 求回文子串个数
 使用动态规划算法
 dp[i][j] = dp[i+1][j-1] && s[i]==s[j]
 
-##### #652 find duplicate substrings 寻找二叉树中重复的子树，对于这些子树，只需要找出它们当中的一个根节点即可。
+##### 652 find duplicate substrings 寻找二叉树中重复的子树，对于这些子树，只需要找出它们当中的一个根节点即可。
 
 查找所有节点的后缀遍历串，并且增加一个map，保存每个这样串的出现次数，当出现次数==2时表示是重复了。
 
-##### #653 two sum iv input is a bst 二叉搜索树数中判断两个结点和是否为k
+##### 653 two sum iv input is a bst 二叉搜索树数中判断两个结点和是否为k
 
 遍历 + hash map
 
-##### #654 maximum binary tree 根据数组构建二叉树，根结点为最大数
+##### 654 maximum binary tree 根据数组构建二叉树，根结点为最大数
 
 递归求解
 
-##### #657 judge route circle 判断LRUD的一系列操作后是否回到原点
+##### 657 judge route circle 判断LRUD的一系列操作后是否回到原点
 记录两个变量 left, up，LR修改left, UD修改up。
 最后判断 left==0 && up==0
 
-##### #658 find k closest elements 排序数组中找出k个和x最接近的数
+##### 658 find k closest elements 排序数组中找出k个和x最接近的数
 
 ```c
 j = lower_bound(a.begin(), a.end(), x) - a.begin();
@@ -352,30 +352,30 @@ i = j - 1;
 //然后从i和j向两边推进
 ```
 
-##### #661 image smoother 图像按九宫格平滑
+##### 661 image smoother 图像按九宫格平滑
 
 遍历计算即可。
 
-##### #662 maximum Width of binary tree 树的最大宽度
+##### 662 maximum Width of binary tree 树的最大宽度
 
 递归遍历访问即可。
 
-##### #665 non decreasing array 至多修改一个数，问该数列能否成为非减数列
+##### 665 non decreasing array 至多修改一个数，问该数列能否成为非减数列
 
 当 a[i-1] > a[i] 时：
 若 a[i-2] > a[i] 则 x = a[i-1] 否则为 a[i]
 修改i-2, i-1, i这三数为 a[i-2], x, x
 
-##### #[E]669 trim a binary search tree 对二叉搜索树，给定区间，返回落在区间内的一棵二叉搜索树
+##### [E]669 trim a binary search tree 对二叉搜索树，给定区间，返回落在区间内的一棵二叉搜索树
 递归遍历，不断判断当前结点是否落在给定区间
 
-##### #[E]671 second minimum node in a binary tree  查找二叉树中第二小的结点，该二叉树中父节点取孩子结点的最小值
+##### [E]671 second minimum node in a binary tree  查找二叉树中第二小的结点，该二叉树中父节点取孩子结点的最小值
 
 先分析该树的特点： 父节点=min(左孩子结点，右孩子结点) ==> 根结点是最小结点 ==> 只要找出比根结点大的最小结点即可。
 
 递归可解
 
-##### #[E] 674 longest continuous increasing subsequence 求数列中递增的连续子数列的最大长度
+##### [E] 674 longest continuous increasing subsequence 求数列中递增的连续子数列的最大长度
 
 递增法：
 
@@ -388,7 +388,7 @@ else{
 }
 ```
 
-##### #[E] 680 valid palindrome ii 判断某个字符串在最多删除一个字符的情况下，是否为回文串
+##### [E] 680 valid palindrome ii 判断某个字符串在最多删除一个字符的情况下，是否为回文串
 
 ```c
 if(s[start++] != s[end--]){
@@ -396,31 +396,31 @@ if(s[start++] != s[end--]){
 }
 ```
 
-##### #[E] 682 basketball game 篮球计分和 
+##### [E] 682 basketball game 篮球计分和 
 
 分C(撤销),D(翻倍),+(前两轮之和),普通数字四种
 
 一次遍历计算既可以
 
-##### #[E] 687 longest univalue path 求二叉树中相同结点路径的最大长度
+##### [E] 687 longest univalue path 求二叉树中相同结点路径的最大长度
 
 求二叉树中相同结点路径的最大长度。
 
 递归遍历即可以了。
 
-##### #[E] 690 employee importance 求员工及其下属的累加importance
+##### [E] 690 employee importance 求员工及其下属的累加importance
 
 建树，递归累加求和即可以了。
 
-##### #[E] 693 binary number with alternating bits
+##### [E] 693 binary number with alternating bits
 
 判断整数的各位相邻数字都是不同的
 
-##### #[E] 696 count binary substrings
+##### [E] 696 count binary substrings
 
 求相等次数的01子串的个数
 
-##### #[E] 697.degree-of-an-array 数组的度定义为当中元素的最大出现次数，求连续子数组，且它的度等于给定其度，求出连续子数组的最短长度
+##### [E] 697.degree-of-an-array 数组的度定义为当中元素的最大出现次数，求连续子数组，且它的度等于给定其度，求出连续子数组的最短长度
 
 ```c
  for(int i=0; i<arr.len; i++){
@@ -443,12 +443,12 @@ if(s[start++] != s[end--]){
  }
 ```
 
-##### #[E] 717 1 bit and 2 bit characters
+##### [E] 717 1 bit and 2 bit characters
 
 两个字母A, B， A编码为0， B编码为10 或 11， 给定AB串的0-1编码串，问最后一个字符是哪个
 
 一次遍历判断即可
 
-##### #[M] 718 maximum length of repeated subarray 求两个数组相同的公共子数组的最大长度
+##### [M] 718 maximum length of repeated subarray 求两个数组相同的公共子数组的最大长度
 
 使用动态规划算法  dp[i][j] = A[i]==B[j] ? dp[i-1][j-1] + 1 : 0;

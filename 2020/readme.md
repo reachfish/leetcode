@@ -1466,6 +1466,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 447.number-of-boomerangs
+
+多个点组成的数组，求其中三元组(a, b, c)的个数，其中a, b, c分别表示三个点。
+
+简单。
+
 #### 470.implement-rand10-using-rand7
 
 通过rand7函数来求rand10。

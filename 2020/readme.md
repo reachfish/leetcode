@@ -1472,6 +1472,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 448.find-all-numbers-disappeared-in-an-array
+
+长度为n的数组中每个数字范围为1~n，求[1,n]中没有出现在该数组中的所有数字。
+
+简单。
+
 #### 470.implement-rand10-using-rand7
 
 通过rand7函数来求rand10。

@@ -1478,6 +1478,12 @@ decode string，string形如 "2[1[a]2[b]]c"之类。
 
 简单。
 
+#### 450.delete-node-in-a-bst
+
+从搜索二叉树中删除一个给定key。
+
+简单。
+
 #### 470.implement-rand10-using-rand7
 
 通过rand7函数来求rand10。
